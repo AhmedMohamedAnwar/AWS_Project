@@ -7,6 +7,7 @@ In this project, we create a **Virtual Private Cloud (VPC)** on AWS and subnet i
 - **Isolated Subnets**  
 
 The subnets are distributed across **two Availability Zones (AZs)** to enhance **reliability, fault tolerance, and high availability**.
+
 ![VPC Architecture](./Images/Anwar_Project.drawio.png)
 
 ## Implementation
