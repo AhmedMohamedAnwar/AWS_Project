@@ -18,8 +18,10 @@ The subnets are distributed across **two Availability Zones (AZs)** to enhance *
   - **Public** → Accessible from the internet (via Internet Gateway).  
   - **Private** → Internal services with outbound internet access (via NAT Gateway).  
   - **Isolated** → Restricted, no direct internet access (for databases or internal systems).  
-- **Two NAT Gateways (NGWs)** were created, one in each AZ, to avoid a **Single Point of Failure (SPOF)** and ensure high availability.
+- **Two NAT Gateways (NGWs)** were created, one in each AZ, to avoid a **Single Point of Failure (SPOF)** and ensure high availability.  
+- The **Terraform state file** is stored remotely in an **S3 bucket**, with **state locking** enabled to prevent concurrent modifications and ensure consistency.  
 
+![State_File](./Images/Terraform_State_File.jpg)
 ---
 
-*This project demonstrates best practices in AWS networking using Infrastructure as Code.*
+*This project demonstrates best practices in AWS networking and remote state management using Infrastructure as Code.*  
